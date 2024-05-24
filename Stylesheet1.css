@@ -1,0 +1,45 @@
+div.Header{
+    width: 100%;
+    height: 400px;
+    margin: 0 0 20px 0;
+    position: relative;
+    background-color: pink;
+    top: 0;
+    padding-top: 0;
+}
+div.Left{
+    position: absolute;
+    width: 15%;
+    left: 0;
+    background-color: gainsboro;
+    height: 2000px;
+    margin: 0;
+    padding: 0;
+}
+div.Right{
+    position: absolute;
+    width: 15%;
+    left: 85%;
+    background-color:gainsboro;
+    height: 2000px;
+    margin: 0;
+    padding: 0;
+}
+div.Body{
+    position: absolute;
+    width: 66%;
+    left: 17%;
+    background-color: aquamarine;
+    height: 2000px;
+    margin: 0;
+    padding: 0;
+}
+div.Footer{
+    position:absolute;
+    left: 0;
+    top: 2460px;
+    height: 500px;
+    margin: 0;
+    width: 100%;
+    background-color: lightskyblue;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF_8">
+        <meta charset="UTF-8">
         <title>Booking Tour</title>
         <link rel="stylesheet" href="Stylesheet1.css">
     </head>
@@ -9,33 +9,221 @@
         <div class="Header">
             <div class="Header1">
                 <nav class="nav1-l">
-                    <a href="https://www.google.com"><p>Google</p></a>
+                    <a href="https://www.google.com"><img src="images/logo.png" alt="Logo"></a>
                     <a href="https://www.youtube.com"><p>Youtube</p></a>
-                    <a href="https://www.travekola.com"><p>Travekola</p></a>
+                    <a href="https://www.traveloka.com"><p>Travekola</p></a>
                     <a href="https://www.agoda.com"><p>Agoda</p></a>
                 </nav>
                 <nav class="nav1-r">
-                    <a href="https://www.google.com"><p>Google</p></a>
-                    <a href="https://www.youtube.com"><p>Youtube</p></a>
-                    <a href="https://www.travekola.com"><p>Travekola</p></a>
+                    <a href="https://www.google.com"><p>Đăng kí</p></a>
+                    <a href="https://www.youtube.com"><p>Đăng nhập</p></a>
+                    <a href="https://www.traveloka.com"><p>Travekola</p></a>
                     <a href="https://www.agoda.com"><p>Agoda</p></a>
+                    <select name="Language" id="1">
+                        <option value="TiengViet">Tiếng Việt</option>
+                        <option value="TiengAnh">English</option>
+                    </select>
                 </nav>
                 <div class="Header11">
-                    
+                    <h1>Slogan of Booking Tour</h1>
+                    <div class="Header111">
+                        <nav class="search">
+                            <!--
+                                <label for="tỉnh">Tỉnh thành: </label>
+                            <select name="Tỉnh" id="1">
+                                <option>Nghệ An</option>
+                                <option>Thanh Hóa</option>
+                            </select>
+                            -->
+                            <section id="search">
+                                <form id="search-form">
+                                    <h2>Tìm chuyến đi</h2>
+                                    <label for="location">Địa điểm:</label>
+                                    <input type="text" id="location" name="location" required>
+                                    <label for="people">Số người:</label>
+                                    <input type="number" id="people" name="people" required>
+                                    <label for="date">Ngày đặt:</label>
+                                    <input type="date" id="date" name="date" required>
+                                    <button type="submit">Tìm kiếm</button>
+                                </form>
+                            </section>
+                        </nav>  
+                        <!--
+                        <nav class="danhmuc">
+                            <section id="danhmuc">
+                                <h2>Danh mục</h2>
+                                <ul>
+                                    <li><a href="#">Du lịch biển</a></li>
+                                    <li><a href="#">Du lịch núi</a></li>
+                                    <li><a href="#">Du lịch văn hóa</a></li>
+                                    <li><a href="#">Du lịch mạo hiểm</a></li>
+                                    <li><a href="#">Du lịch biển</a></li>
+                                    <li><a href="#">Du lịch núi</a></li>
+                                    <li><a href="#">Du lịch văn hóa</a></li>
+                                    <li><a href="#">Du lịch mạo hiểm</a></li>
+                                </ul>
+                            </section>
+                        </nav> 
+                        -->                              
+                    </div>
                 </div>
             </div>
         </div>
         <div class="Body">
-            <h1>Hello</h1>
-        </div>
-        <div class="Left">
-            <h1>Hello</h1>
-        </div>
-        <div class="Right">
-            <h1>Hello</h1>
+            
+            <h2>Điểm đến nổi bật</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/vungtau.jpg" alt="Bãi biển">
+                    <div class="card-content">
+                        <h3>Bãi biển đẹp</h3>
+                        <p>Khám phá những bãi biển tuyệt đẹp với cát trắng và nước biển trong xanh.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/fansipan.jpg" alt="Núi">
+                    <div class="card-content">
+                        <h3>Núi hùng vĩ</h3>
+                        <p>Tham gia các chuyến du lịch leo núi để chiêm ngưỡng cảnh quan tuyệt đẹp từ đỉnh núi.</p>
+                    </div>
+                </div>
+                <!-- Thêm nhiều card hơn nếu cần thiết -->
+            </div>
+            <section id="popular-destinations">
+                <h2>Địa điểm nổi tiếng</h2>               
+                <div class="snap-container">
+                    <div class="prev-button">
+                        <button id="prev-button">❮</button>
+                    </div>                   
+                    <div class="snap-item">
+                        <img src="images/paris.jpg" alt="Paris">
+                        <p>Paris, Pháp</p>
+                    </div>
+                    <div class="snap-item">
+                        <img src="images/tokyo.jpg" alt="Tokyo">
+                        <p>Tokyo, Nhật Bản</p>
+                    </div>
+                    <div class="snap-item">
+                        <img src="images/newyork.jpg" alt="New York">
+                        <p>New York, Mỹ</p>
+                    </div>
+                    <!-- Thêm nhiều snap-item hơn nếu cần thiết -->
+                    <div class="next-button">
+                        <button id="next-button">❯</button>
+                    </div>                   
+                </div>               
+            </section>
+            
+            <section id="for-sales">      
+                <h2>Áp dụng chương trình khuyến mãi</h2>                
+                <div class="snap-container1">   
+                    <div class="prev-button1">
+                        <button id="prev-button1">❮</button>
+                    </div>                        
+                    <div class="snap-item1" id="snap-item1_1">
+                        <img src="images/paris.jpg" alt="Paris">
+                        <p>Paris, Pháp</p>
+                    <!--    <p class="sale">Giảm đến 20%</p> --> 
+                    </div>
+                    <div class="snap-item1">
+                        <img src="images/tokyo.jpg" alt="Tokyo">
+                        <p>Tokyo, Nhật Bản</p>
+                    </div>
+                    <div class="snap-item1">
+                        <img src="images/newyork.jpg" alt="New York">
+                        <p>New York, Mỹ</p>
+                    </div>
+                    
+                    <div class="next-button1">
+                        <button id="next-button1">❯</button>
+                    </div>            
+                </div>                             
+            </section>
+            <section class="about">
+                <nav class="about">
+                    <h2>Giới thiệu </h2>
+                    <p>Chào mừng bạn đến với trang web đặt chuyến du lịch của chúng tôi, nơi biến những ước mơ khám phá thế giới của bạn thành hiện thực! 
+                        Chúng tôi tự hào là nền tảng hàng đầu giúp bạn tìm kiếm, lên kế hoạch và đặt các chuyến đi hoàn hảo cho mình và người thân.</p>
+                    <!--
+                        <h3>Đa Dạng Lựa Chọn Du Lịch</h3>
+                    <p>Chúng tôi cung cấp một kho tàng phong phú các điểm đến trên toàn thế giới. Dù bạn muốn nghỉ dưỡng trên bãi biển, 
+                        khám phá những thành phố sầm uất hay tham gia các tour du lịch mạo hiểm, chúng tôi đều có những lựa chọn phù hợp với nhu cầu của bạn.</p>
+                    <h3>Dễ Dàng So Sánh Giá Cả</h3>
+                    <p>Với công cụ so sánh giá tiên tiến, bạn có thể dễ dàng tìm thấy những ưu đãi tốt nhất cho chuyến đi của mình. 
+                        Chúng tôi hợp tác với nhiều hãng hàng không, khách sạn và dịch vụ du lịch uy tín để đảm bảo bạn luôn nhận được giá trị tốt nhất cho số tiền bỏ ra.</p>
+                    <h3>Đặt Chỗ Nhanh Chóng và An Toàn</h3>
+                    <p>Quy trình đặt chỗ đơn giản và bảo mật cao giúp bạn hoàn tất việc đặt vé máy bay, khách sạn và các dịch vụ khác chỉ trong vài bước. 
+                        Chúng tôi cam kết bảo vệ thông tin cá nhân và tài chính của bạn một cách tuyệt đối.</p>
+                    <h3>Hỗ Trợ Khách Hàng 24/7</h3>
+                    <p>Đội ngũ hỗ trợ khách hàng của chúng tôi luôn sẵn sàng 24/7 để giải đáp mọi thắc mắc và hỗ trợ bạn trong quá trình đặt chuyến đi. 
+                        Chúng tôi luôn lắng nghe và đáp ứng mọi nhu cầu của bạn để đảm bảo một trải nghiệm du lịch suôn sẻ và đáng nhớ.</p>
+                    <h3>Nhiều Chương Trình Khuyến Mãi Hấp Dẫn</h3>
+                    <p>Đừng bỏ lỡ các chương trình khuyến mãi hấp dẫn và các gói du lịch tiết kiệm mà chúng tôi liên tục cập nhật. 
+                        Hãy đăng ký nhận thông tin qua email để luôn được thông báo về những ưu đãi mới nhất.</p>
+                        -->
+                    <p>Hãy để chúng tôi đồng hành cùng bạn trên mọi chặng đường và khám phá những chân trời mới. Trang web đặt chuyến du lịch của chúng tôi là
+                         người bạn đồng hành tin cậy, mang đến cho bạn những trải nghiệm du lịch tuyệt vời và đáng nhớ nhất.</p>
+                    <p>Khám phá ngay hôm nay và lên kế hoạch cho chuyến đi mơ ước của bạn!</p>
+                </nav>
+
+                <nav class="img-about">
+                    <img src="images/anhnen2.jpg" alt="">
+                </nav>
+            </section>
+            <section class="fullmenu">
+                <ul>                    
+                    <li class="continents">Châu Á</li>
+                    <li>Tokyo, Nhật Bản</li>
+                    <li>Bangkok, Thái Lan</li>
+                    <li>Bali, Indonesia</li>
+                    <li>Seoul, Hàn Quốc</li>
+                    <li>Hồng Kông</li>
+                </ul>
+                <ul>
+                    <li class="continents">Châu Âu</li>
+                    <li>Paris, Pháp</li>
+                    <li>Rome, Ý</li>
+                    <li>London, Anh</li>
+                    <li>Barcelona, Tây Ban Nha</li>
+                    <li>Amsterdam, Hà Lan</li>
+                </ul>
+                <ul>
+                    <li class="continents">Châu Mỹ</li>
+                    <li>New York, Mỹ</li>
+                    <li>Rio de Janeiro, Brazil:</li>
+                    <li>Cancun, Mexico</li>
+                    <li>Toronto, Canada</li>
+                    <li>Buenos Aires, Argentina</li>
+                </ul>
+                <ul>
+                    <li class="continents">Châu Phi</li>
+                    <li>Calie Town, Nam Phi</li>
+                    <li>Marrakech, Maroc</li>
+                    <li>Cairo, Ai Cập</li>
+                    <li>Nairobi, Kenya</li>
+                    <li>Zanzibar, Tanzania</li>
+                </ul>
+                <ul>
+                    <li class="continents">Châu Đại Dương</li>
+                    <li>Sydney, Úc</li>
+                    <li>Auckland, New Zealand</li>
+                    <li>Melbourne, Úc</li>
+                    <li>Fiji</li>
+                    <li>Brisbane, Úc</li>
+                </ul>
+
+            </section>
         </div>
         <div class="Footer">
-            <h1>Hello</h1>
-        </div>
+            <h3>Xem thêm về chúng tôi</h3>
+            <ul class="Find-us">
+                <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/6/6904cd2e74ef73120833cff12185a320.svg" alt="Facebook"></li>
+                <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/6/62a2fc240d7e00b05d0d6f6b4e785110.svg" alt="Instagram"></li>
+                <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/4/471f17c1510d49a98bec08a48b84c607.svg" alt="Tiktok"></li>
+                <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/b/b593add66303beb2a0cae9e96963e68b.svg" alt="Youtube"></li>
+                <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/a/a4da6605a9dd2f38ac799eaedeff976d.svg" alt="Telegram"></li>
+            </ul>
+        </div> 
+        <script src="script.js"></script>
     </body>
 </html>

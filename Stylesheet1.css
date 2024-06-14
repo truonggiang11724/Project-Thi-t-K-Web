@@ -17,23 +17,45 @@ div.Header11{
     text-align: center;
     background-image: url(images/anhnen2.jpg);
     background-size:cover;
+    
 }
 
+div.Header11 h1{
+    padding-top: 50px;
+    margin-top: 0;
+}
+
+div.Header111{
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* Left nav bar */
 nav.nav1-l {
     display: flex;
     flex-direction: row;
     text-align: right;
     position: absolute;
+    margin-left: 30px;
 }
 
 nav.nav1-l a {
-    width: 100px;
+    width: 90px;
     height: 60px;
     display: flex;
     flex-direction: row;
     background-color: antiquewhite;
+    line-height: 30px;
+    justify-content: center;
 }
 
+
+
+nav.nav1-l a:hover {
+    background-color: rgb(125, 225, 135);
+}
+
+/* Right nav bar*/
 nav.nav1-r {
     display: flex;
     flex-direction: row-reverse;
@@ -42,45 +64,345 @@ nav.nav1-r {
 }
 
 nav.nav1-r a {
-    width: 100px;
+    width: 90px;
     height: 60px;
     display: flex;
     flex-direction: row;
     background-color: antiquewhite;
+    margin: 0 5px;
+    line-height: 30px;
+    justify-content: center;
 }
-div.Left{
-    position: absolute;
-    width: 15%;
-    left: 0;
-    background-color: gainsboro;
-    height: 2000px;
-    margin: 0;
-    padding: 0;
+
+nav.nav1-r a:hover {
+    background-color: rgb(125, 225, 135);
 }
-div.Right{
-    position: absolute;
-    width: 15%;
-    left: 85%;
-    background-color:gainsboro;
-    height: 2000px;
-    margin: 0;
-    padding: 0;
+
+nav.nav1-r select {
+    margin-right: 20px;
+    background-color: antiquewhite;
+    border: none;
+    width: 100px;
+    line-height: 30px;
 }
+
+/* Body */
 div.Body{
-    position: absolute;
-    width: 66%;
-    left: 17%;
-    background-color: aquamarine;
-    height: 2000px;
+    
+    text-align: center;
+    background-color: #f4f7d7;
+    height: 100%;
     margin: 0;
     padding: 0;
+    position: relative;
 }
+
+body {
+    margin: 0;
+}
+
+/* Bảng tìm kiếm */
+nav.search {
+    margin-left: 150px;
+    margin-right: 100px;
+    
+}
+
+section#search{
+    
+    text-align: center;
+}
+
+form#search-form{
+    display: grid;
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    
+}
+
+h2{
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: antiquewhite;
+}
+
+form#search-form input{
+    width: 40%;
+    height: 30px;
+    text-align: center;
+    background-color: lavender;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+form#search-form button{
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Bảng danh mục */
+section#danhmuc{
+  background-color: white;
+
+    
+}
+nav.danhmuc {
+    position: fixed;
+    right: 1%;
+    width: 10%;
+    z-index: 2;
+    
+}
+
+ul li {
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Mục điểm đến núi rừng.. */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+
+.card img {
+    width: 100%;
+    height: 70%;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    margin: 0.5rem 0 0 0;
+}
+
+/* Điểm đến nổi tiếng */
+#popular-destinations {
+    margin-top: 2rem;
+    position: relative;
+}
+
+#popular-destinations button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+}
+
+
+#prev-button {
+    left: 11%;
+}
+
+#next-button {
+    right: 10%;
+}
+
+.snap-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem 0;
+    width: 75%;
+    margin: auto;
+}
+
+.snap-item {
+    
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    width: 60%;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+}
+
+.snap-item img {
+    width: 100%;
+    height: 90%;
+}
+
+.snap-item p {
+    margin: 0.5rem 0 0 0;
+    font-weight: bold;
+}
+
+/* Phần giới thiệu chung */
+section.about{
+    height: 30%;
+    background-color:rgb(199, 209, 171) ;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.about nav h2 {
+    background-color:rgb(199, 209, 171) ;
+    text-align: left;
+    margin: 30px 0 10px 30px;
+}
+
+section.about nav p{
+    font-size: larger;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+section.about nav.img-about {
+    width: 60%;
+}
+
+section.about nav.img-about img {
+    width: 100%;
+    height: 100%;
+}
+nav.about{
+    width: 40%;
+}
+
+/* Chương trình khuyến mãi */
+#for-sales {
+    margin-top: 2rem;
+    position: relative;
+}
+
+#for-sales button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+}
+
+
+#prev-button1 {
+    left: 11%;
+}
+
+#next-button1 {
+    right: 10%;
+}
+
+.snap-container1 {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem 0;
+    width: 75%;
+    margin: auto;
+}
+
+.snap-item1 {
+    
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    width: 40%;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+}
+
+#snap-item1_1 p.sale {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: blue;
+}
+
+.snap-item1 img {
+    width: 100%;
+    height: 90%;
+}
+
+.snap-item1 p {
+    margin: 0.5rem 0 0 0;
+    font-weight: bold;
+}
+
+/* Phần menu địa điểm các châu lục */
+section.fullmenu{
+    display: flex;
+}
+
+section.fullmenu li.continents{
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+section.fullmenu li{
+    margin: 15px 0;
+}
+
+section.fullmenu ul {
+    width: 20%;
+}
+
+ /* Chân trang */
 div.Footer{
-    position:absolute;
-    left: 0;
-    top: 2460px;
-    height: 500px;
+    position: relative;
     margin: 0;
     width: 100%;
-    background-color: lightskyblue;
+    background-color: rgb(217, 230, 215);
+    text-align: center;
+}
+
+.Footer h3{
+    padding-top: 30px;
+    margin-top: 0;
+}
+
+ul.Find-us {
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    margin-bottom: 0;
+}
+
+ul.Find-us li {
+    padding: 10px;
+    margin-bottom: 50px;
+    
 }

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris - Tourasis</title>
+    <link rel="icon" type="image/x-icon" href="../images/logoicon.ico">
+    <link rel="stylesheet" href="Paris.css">
+</head>
+
+<body>
+    <div class="Header">
+        <div class="Header1">
+            <div class="navbar">
+                <nav class="nav1-l">
+                    <a href="../Home.html"><img src="../images/logo.png" alt="Logo"></a>
+                    <a href=# style="width: 150px;">Địa điểm nổi tiếng</a>
+                    <a href=#>Khuyến mãi</a>
+                    <a href="../LienHe/lienhe.html">Liên hệ</a>
+                </nav>
+                <nav class="nav1-r">
+                    <a href="../DangNhap/Dangnhap.html">Đăng kí</a>
+                    <a href="../DangNhap/Dangnhap.html">Đăng nhập</a>
+                    <button class="navbar-toggle" onclick="toggleNavbar()">&#9776;</button>
+                    <select name="Language" id="1">
+                        <option value="TiengViet">Tiếng Việt</option>
+                        <option value="TiengAnh">English</option>
+                    </select>
+                </nav>
+                <nav class="navbar-links" id="navbarLinks">
+                    <a href=#>Địa điểm nổi tiếng</a>
+                    <a href=#>Khuyến mãi</a>
+                    <a href="../LienHe/lienhe.html">Liên hệ</a>
+                    <a href="../DangNhap/Dangnhap.html">Đăng kí</a>
+                    <a href="../DangNhap/Dangnhap.html">Đăng nhập</a>
+                </nav>
+            </div>
+            <div class="Header11">
+                <h1>DU LỊCH CÙNG TOURASIS</h1>
+                <div class="Header111">
+                    <nav class="search">
+                        <section id="search">
+                            <form id="search-form">
+                                <h2>Điền thông tin chuyến đi</h2>
+                                <label for="location" class="location">Địa điểm xuất phát</label>
+                                <div>
+                                    <div>
+                                        <label for="Province">Tỉnh/Thành phố: </label>
+                                        <select name="Province" id="Province">
+                                            <option value="">--Chọn Tỉnh/Thành phố--</option>
+                                            <option value="hanoi">Hà Nội</option>
+                                            <option value="tphcm">TP Hồ Chí Minh</option>
+                                            <option value="hatinh">Hà Tĩnh</option>
+                                            <option value="nghean">Nghệ An</option>
+                                            <option value="thanhhoa">Thanh Hóa</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="District">Quận/Huyện: </label>
+                                        <select name="" id="District">
+                                            <option value="">--Chọn Quận/Huyện..</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <div class="info">
+                                    <label for="people">Số người lớn:</label>
+                                    <input type="number" id="people" name="people" required>
+                                    <label for="people">Số trẻ em:</label>
+                                    <input type="number" id="people" name="people" required>
+                                </div>
+                                <div class="info">
+                                    <label for="date">Ngày đặt:</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+                                <button type="button" onclick="onthamkhao()">Tham khảo giá</button>
+                            </form>
+                        </section>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="price">
+    <section class="price">
+        <div class="loca">
+            <label for="">Điểm xuất phát:</label>
+            <input type="text">
+            <label for="">Điểm đến:</label>
+            <input type="text">
+            <label for="">Số ngày:</label>
+            <input type="text">
+            <label for="" class="pricelabel">Giá dự kiến: 10.000.000đ</label>
+        </div>
+        <div class="trans">
+            <label for="">Phương tiện di chuyển:</label>
+            <select name="" id="">
+                <option value="">Máy bay</option>
+                <option value="">Tàu hỏa</option>
+                <option value="">Xe khách</option>
+            </select>
+            <button class="order">Đặt ngay</button>
+        </div>
+        <div class="hotel">
+            <div class="hotel-list">
+                <div class="hotel-item">
+                    <img src="images/hotel1.jpg" alt="">
+                    <label for="">Khách sạn 1</label>
+                    <label for="">Địa chỉ: 159 Street Orca</label>
+                    <label for="" class="pricehotel">Giá: 1590000đ/ 1 ngày</label>
+                </div>
+                <div class="hotel-item">
+                    <img src="images/hotel2.jpg" alt="">
+                    <label for="">Khách sạn 1</label>
+                    <label for="">Địa chỉ: 185 Street Aster</label>
+                    <label for="" class="pricehotel">Giá: 899000đ/ 1 ngày</label>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    <section class="place-list">
+        <h1>Paris - Pháp</h1>
+        <div class="place">
+            <h2>Bảo Tàng Orsay Paris</h2>
+            <div class="descr">
+                <div class="image-descr">
+                    <img src="images/baotangorsay_2.jpg" alt="Place 1" class="imagemain" id="imagemain">
+                    <div class="imagex2" id="imagex2">
+                        <img src="images/baotangorsay_1.jpg" alt="Place 1">
+                        <img src="images/baotangorsay.jpg" alt="Place 1">
+                    </div>
+                </div>
+                <p class="pdescr">Bảo tàng Orsay mệnh danh là "ngôi nhà" của bộ sưu tập nghệ thuật thuộc trường phái Ấn
+                    tượng và hậu Ấn tượng lớn nhất trên thế giới. Vậy cho nên đây cũng là địa điểm du lịch Paris được
+                    đông đảo team yêu nghệ thuật yêu mến. Chào đón bạn tại Bảo Tàng Orsay là những tác phẩm kinh điển
+                    của những hoạ sĩ đại tài như Van Gogh, Cezanne và Renoir.</p>
+            </div>
+        </div>
+        <div class="place">
+            <h2>Công viên Parc Astérix Paris</h2>
+            <div class="descr">
+                <div class="image-descr">
+                    <img src="images/congvienparis_2.jpg" alt="Place 2" class="imagemain" id="imagemain">
+                    <div class="imagex2" id="imagex2">
+                        <img src="images/congvienparis.jpg" alt="Place 2">
+                        <img src="images/congvienparis_1.jpg" alt="Place 2">
+                    </div>
+                </div>
+
+                <p class="pdescr">Nếu đã từng mê mệt Thần Thoại Bắc Âu hay Chiến Tranh La Mã thì đây đích thị là "thiên
+                    đường" dành cho bạn. Đến với Công viên Parc Astérix, bạn sẽ được trải nghiệm một ngày của chiến binh
+                    tộc Gaul, tham gia vào các phân khu giải trí đa chủ đề: Gaul, The Roman Empire, Greece, The Vikings,
+                    Travel Through Time, và Egyptian. Bạn sẽ có được thời gian "xả stress" thú vị với một trong những
+                    tàu lượn siêu tốc lớn nhất ở Châu Âu, The Thunder of Zeus.</p>
+            </div>
+        </div>
+        <div class="place">
+            <h2>Tháp Eiffel</h2>
+            <div class="descr">
+                <div class="image-descr">
+                    <img src="images/eiffel.jpg" alt="Place 3" class="imagemain" id="imagemain">
+                    <div class="imagex2" id="imagex2">
+                        <img src="images/eiffel_1.png" alt="Place 3">
+                        <img src="images/eiffel_2.jpg" alt="Place 3">
+                    </div>
+                </div>
+
+                <p class="pdescr">Tháp Eiffel chắc chắn là điểm du lịch nổi tiếng nhất ở Paris, được thiết kế bởi Gustav
+                    Eiffel cho Triển lãm Thế giới năm 1889, gồm 3 tầng, tầng cao nhất cao 276 mét, tầng 1 và tầng 2 có
+                    thể đi lên bằng cầu thang và thang máy, chỉ có thang máy lên tầng 3. Tháp Eiffel tổng cộng cao 330
+                    mét, nếu tính cả ăng-ten trên đỉnh.</p>
+            </div>
+        </div>
+        <div class="place">
+            <h2>Notre-Dame: Nhà thờ Đức Bà Paris</h2>
+            <div class="descr">
+                <div class="image-descr">
+                    <img src="images/nhatho.jpg" alt="Place 4" class="imagemain" id="imagemain">
+                    <div class="imagex2" id="imagex2">
+                        <img src="images/nhatho_1.jpg" alt="Place 4">
+                        <img src="images/nhatho_2.jpg" alt="Place 4">
+                    </div>
+                </div>
+
+                <p class="pdescr">Nhà thờ nổi tiếng nhất ở Paris, nằm trên đảo Île de la Cité, nổi tiếng thế giới vì
+                    cuốn tiểu thuyết “Thằng gù nhà thờ Đức Bà” của Victor Hugo viết năm 1831. Nhà thờ dài 130 mét, rộng
+                    69 mét và cao 35 mét. Hơn 13 triệu khách du lịch đến thăm nhà thờ mỗi năm. Điều này khiến nó trở
+                    thành một trong những điểm tham quan được truy cập nhiều nhất trên thế giới.</p>
+            </div>
+        </div>
+    </section>
+    <div class="comment-section">
+        <h2>Để Lại bình luận, góp ý cho chúng tôi</h2>
+        <form id="comment-form">
+            <div class="form-group">
+                <label for="name">Tên:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="comment">Bình Luận:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <button type="submit">Gửi</button>
+        </form>
+        <div id="comments">
+            <!-- Bình luận mẫu tĩnh -->
+            <div class="comment">
+                <div class="comment-content">
+                    <h4>Ramsdatle</h4>
+                    <p>Địa điểm này thật tuyệt vời! Phong cảnh đẹp mắt và đồ ăn địa phương rất ngon.</p>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="comment-content">
+                    <h4>Giang</h4>
+                    <p>Tôi đã có một khoảng thời gian tuyệt vời khi thăm quan địa điểm này. Các di tích lịch sử được bảo
+                        tồn rất tốt.</p>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="comment-content">
+                    <h4>Hợp</h4>
+                    <p>Một địa điểm phải đến cho những ai yêu thiên nhiên. Các đường mòn leo núi cho những cảnh quan
+                        tuyệt vời.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" class="scroll-to-top" id="scrollToTopBtn">Đi thôi</button>
+    <footer>
+        <div class="Footer">
+            <div class="nguoithietke">
+                <h3>Trang web được thiết kế bởi: </h3>
+                <ul>
+                    <li>Trần Hậu Thành Đạt</li>
+                    <li>Lương Xuân Hợp</li>
+                    <li>Nguyễn Việt Sáng</li>
+                    <li>Nguyễn Trường Giang</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Xem thêm về chúng tôi</h3>
+                <ul class="Find-us">
+                    <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/6/6904cd2e74ef73120833cff12185a320.svg"
+                            alt="Facebook"></li>
+                    <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/6/62a2fc240d7e00b05d0d6f6b4e785110.svg"
+                            alt="Instagram"></li>
+                    <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/4/471f17c1510d49a98bec08a48b84c607.svg"
+                            alt="Tiktok"></li>
+                    <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/b/b593add66303beb2a0cae9e96963e68b.svg"
+                            alt="Youtube"></li>
+                    <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/a/a4da6605a9dd2f38ac799eaedeff976d.svg"
+                            alt="Telegram"></li>
+                </ul>
+            </div>
+            <div class="lienhe">
+                <h3>Thông tin liên hệ</h3>
+                <ul>
+                    <li>Số điện thoại: 0975606551</li>
+                    <li>Email: truonggiang11724@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="Paris.js"></script>
+</body>
+
+</html>

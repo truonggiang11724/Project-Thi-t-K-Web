@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    align-items: center;
+    background-color: antiquewhite;
+    color: black;
+}
+/* navbar */
+
+/* Left nav bar */
+.navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav.nav1-l {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    position: absolute;
+    margin-left: 30px;
+}
+
+nav.nav1-l a {
+    color: black;
+    width: 160px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    line-height: 60px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+nav.nav1-l a:hover {
+    width: 120px;
+    height: 40px;
+    padding: 5px;
+    border: solid 5px rgb(125, 225, 135);
+    line-height: 40px;
+}
+
+nav.nav1-l select {
+    margin-right: 1%;
+    background-color: antiquewhite;
+    border: none;
+    width: 100px;
+    line-height: 30px;
+}
+/* Phần chat */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+.chat-container {
+    width: 70%;
+    height: 100%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.chat-box {
+    padding: 20px;
+    height: 80%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px;
+}
+
+.message p {
+    margin: 0;
+}
+
+.message.manager {
+    background-color: antiqueblack;
+    color: black;
+    align-self: flex-start;
+}
+
+.message.user {
+    background-color: #f1f1f1;
+    align-self: flex-end;
+}
+
+.time {
+    font-size: 12px;
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+    color: gray;
+}
+
+.input-box {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+}
+
+.input-box button {
+    padding: 10px 20px;
+    background-color: antiqueblack;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: antiqueblack;
+    color: black;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.logo img{
+    height: 60px;
+}
+
+
+/* Chân trang */
+ul li {
+    list-style-type: none;
+}
+
+div.Footer {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(217, 230, 215);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Footer div {
+    justify-self: unset;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.Footer h3 {
+    padding-top: 30px;
+    margin-top: 0;
+}
+
+ul.Find-us {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 0;
+}
+
+ul.Find-us li {
+    padding: 10px;
+    margin-bottom: 50px;
+
+}
+
+.lienhe li {
+    text-align: left;
+}
+
+.Footer ul {
+    padding-inline-start: 0;
+}

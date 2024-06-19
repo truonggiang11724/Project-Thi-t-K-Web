@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="icon" type="image/x-icon" href="../images/logoicon.ico">
+    <link rel="stylesheet" href="dangnhap.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../Home.html"><img src="../images/logo.png" alt="Logo"></a>
+        
+    </nav>
+    <div class="container">
+        <div class="form-container sign-up-container">
+            <form id="signUpForm">
+                <h1>Tạo tài khoản</h1>
+                <input type="text" placeholder="Họ Tên" id="signUpName" />
+                <input type="email" placeholder="Email" id="signUpEmail" />
+                <input type="password" placeholder="Mật khẩu" id="signUpPassword" />
+                <button type="button" id="signUpBtn">Tạo tài khoản</button>
+                <p class="error-message" id="signUpError"></p>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form id="signInForm">
+                <h1>Đăng nhập</h1>
+                <input type="email" placeholder="Email" id="signInEmail" />
+                <input type="password" placeholder="Mật khẩu" id="signInPassword" />
+                <button type="button" id="signInBtn">Đăng nhập</button>
+                <p class="error-message" id="signInError"></p>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Đăng nhập</h1>
+                    <p>Nếu đã có tài khoản, hãy đăng nhập!</p>
+                    <button class="ghost" id="signIn">Đăng nhập</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Xin chào!</h1>
+                    <p>Nếu chưa có tài khoản, hãy đăng kí và du lịch cùng chúng tôi!</p>
+                    <button class="ghost" id="signUp">Tạo tài khoản</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dangnhap.js"></script>
+</body>
+</html>

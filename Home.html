@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourasis</title>
+    <link rel="icon" type="image/x-icon" href="images/logoicon.ico">
+    <link rel="stylesheet" href="Stylesheet1.css">
+</head>
+
+<body>
+    <div class="Header">
+        <div class="Header1">
+            <div class="navbar">
+                <nav class="nav1-l">
+                    <a href="Home.html"><img src="images/logo.png" alt="Logo"></a>
+                    <a href=# style="width: 150px;">Địa điểm nổi tiếng</a>
+                    <a href=#>Khuyến mãi</a>
+                    <a href="LienHe/lienhe.html">Liên hệ</a>
+                </nav>
+                <nav class="nav1-r">
+                    <a href="DangNhap/Dangnhap.html">Đăng kí</a>
+                    <a href="DangNhap/Dangnhap.html">Đăng nhập</a>
+                    <button class="navbar-toggle" onclick="toggleNavbar()">&#9776;</button>
+                    <select name="Language" id="1">
+                        <option value="TiengViet">Tiếng Việt</option>
+                        <option value="TiengAnh">English</option>
+                    </select>
+                </nav>
+                <nav class="navbar-links" id="navbarLinks">
+                    <a href=#>Địa điểm nổi tiếng</a>
+                    <a href=#>Khuyến mãi</a>
+                    <a href="LienHe/lienhe.html">Liên hệ</a>
+                    <a href="DangNhap/Dangnhap.html">Đăng kí</a>
+                    <a href="DangNhap/Dangnhap.html">Đăng nhập</a>
+                </nav>
+            </div>
+            <div class="Header11">
+                <h1>DU LỊCH CÙNG TOURASIS</h1>
+                <div class="Header111">
+                    <nav class="search">
+                        <section id="search">
+                            <form id="search-form">
+                                <h2>Tìm chuyến đi</h2>
+                                <label for="location">Địa điểm:</label>
+                                <div class="autocomplete">
+                                    <input id="myInput" type="text" name="myCountry" placeholder="Bạn muốn đi đâu ?">
+                                </div>
+                                <button type="button" onclick="ontimkiem()" class="placesearch" id="placesearch">Tìm kiếm</button>
+                            </form>
+                        </section>
+                        <section class="Suggest">
+                            <ul>
+                                <li onclick="onpopular()"><img src="images/popularity.png" alt="" class="icon"
+                                        id="popularbutton"> Điểm nổi tiếng</li>
+                                <li onclick="onsale()"><img src="images/sale.png" alt="" class="icon" id="salebutton">
+                                    Khuyến mãi</li>
+                                <li onclick="onsale()"><img src="images/search.png" alt="" class="icon"
+                                        id="manysearchbutton"> Tìm kiếm nhiều</li>
+                                <li onclick="onforeign()"><img src="images/earth.png" alt="" class="icon"
+                                        id="foreignbutton"> Nước ngoài</li>
+                            </ul>
+                        </section>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Body">
+        <section id="resultsearch">
+            <section class="place-list">
+                <h1>Kết quả tìm kiếm</h1>
+                <div class="place">
+                    <h3>Paris - Pháp</h3>
+                    <div class="descr">
+                        <a href="Paris/Paris.html">
+                            <img src="images/paris.jpg" alt="Place 1" class="imagemain" id="imagemain">
+                            <p class="pdescr">Được mệnh danh là “Kinh đô ánh sáng” của Pháp, thủ đô Paris hoa lệ luôn là
+                                điểm dừng chân của nhiều Du Khách đam mê cái đẹp.
+                                Không chỉ nổi tiếng với những công trình kiến trúc khổng lồ, các viện bảo tàng cổ kính
+                                và những con đường phồn hoa,
+                                hay các góc phố rực rỡ, thành phố Paris còn được nhiều Du Khách biết đến với nền văn hoá
+                                tinh tế và ẩm thực tuyệt vời.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="place">
+                    <h3>Barcelona - Tây Ban Nha</h3>
+                    <div class="descr">
+                        <a href="Paris/Paris.html">
+                            <img src="images/anhnenbarcelona.jpg" alt="Place 1" class="imagemain" id="imagemain">
+                            <p class="pdescr">Thành phố Barcelona được mệnh danh là một trong 10 thành phố đẹp nhất thế giới. 
+                                 Ghé thăm Barcelona, bạn sẽ không thể không trầm trồ khi chiêm ngưỡng những công trình kiến trúc xây dựng Gaudi 
+                                 độc đáo hay khám phá một nền văn hoá đa dạng và đặc trưng. Điều thú vị nhất là
+                                  bạn có cơ hội hoà mình vào cuộc sống về đêm sôi động trải dài suốt bờ biển Barcelona xinh đẹp.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="place">
+                    <h3>Tokyo - Nhật Bản</h3>
+                    <div class="descr">
+                        <a href="Paris/Paris.html">
+                            <img src="images/paris.jpg" alt="Place 1" class="imagemain" id="imagemain">
+                            <p class="pdescr">Được mệnh danh là “Kinh đô ánh sáng” của Pháp, thủ đô Paris hoa lệ luôn là
+                                điểm dừng chân của nhiều Du Khách đam mê cái đẹp.
+                                Không chỉ nổi tiếng với những công trình kiến trúc khổng lồ, các viện bảo tàng cổ kính
+                                và những con đường phồn hoa,
+                                hay các góc phố rực rỡ, thành phố Paris còn được nhiều Du Khách biết đến với nền văn hoá
+                                tinh tế và ẩm thực tuyệt vời.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="place">
+                    <h3>Newyork - Mỹ</h3>
+                    <div class="descr">
+                        <a href="Paris/Paris.html">
+                            <img src="images/paris.jpg" alt="Place 1" class="imagemain" id="imagemain">
+                            <p class="pdescr">Được mệnh danh là “Kinh đô ánh sáng” của Pháp, thủ đô Paris hoa lệ luôn là
+                                điểm dừng chân của nhiều Du Khách đam mê cái đẹp.
+                                Không chỉ nổi tiếng với những công trình kiến trúc khổng lồ, các viện bảo tàng cổ kính
+                                và những con đường phồn hoa,
+                                hay các góc phố rực rỡ, thành phố Paris còn được nhiều Du Khách biết đến với nền văn hoá
+                                tinh tế và ẩm thực tuyệt vời.</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <h2>Lên rừng hay xuống biển ?</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="images/vungtau.jpg" alt="Bãi biển">
+                <div class="card-content">
+                    <h3>Bãi biển đẹp</h3>
+                    <p>Khám phá những bãi biển tuyệt đẹp với cát trắng và nước biển trong xanh.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/fansipan.jpg" alt="Núi">
+                <div class="card-content">
+                    <h3>Núi hùng vĩ</h3>
+                    <p>Các chuyến du lịch leo núi để chiêm ngưỡng cảnh quan tuyệt đẹp từ đỉnh núi.</p>
+                </div>
+            </div>
+            <!-- Thêm nhiều card hơn nếu cần thiết -->
+        </div>
+        <section id="popular-destinations">
+            <h2>Địa điểm nổi tiếng</h2>
+            <div class="snap-container">
+                <div class="prev-button">
+                    <button id="prev-button">❮</button>
+                </div>
+                
+                <div class="snap-item">
+                    <a href="Paris/Paris.html">
+                    <img src="images/paris.jpg" alt="Paris">
+                    </a>
+                    <p>Paris, Pháp</p>
+                </div>
+                <div class="snap-item">
+                    <img src="images/tokyo.jpg" alt="Tokyo">
+                    <p>Tokyo, Nhật Bản</p>
+                </div>
+                <div class="snap-item">
+                    <a href="newyork/NewYork.html">
+                    <img src="images/newyork.jpg" alt="New York"></a>
+                    <p>New York, Mỹ</p>
+                </div>
+                <div class="snap-item">
+                    <img src="images/samson.jpg" alt="New York">
+                    <p>Bãi biển Sầm Sơn, Thanh Hóa</p>
+                </div>
+                <div class="snap-item">
+                    <img src="images/fansipan_1.jpg" alt="New York">
+                    <p>Đỉnh núi Fansipan, Lào Cai</p>
+                </div>
+                <div class="snap-item">
+                    <img src="images/hoian.jpg" alt="New York">
+                    <p>Phố cổ Hội An</p>
+                </div>
+                <!-- Thêm nhiều snap-item hơn nếu cần thiết -->
+                <div class="next-button">
+                    <button id="next-button">❯</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="for-sales">
+            <h2>Áp dụng chương trình khuyến mãi</h2>
+            <div class="snap-container1">
+                <div class="snap-item1" id="snap-item1_1">
+                    <img src="images/dalat.jpg" alt="Ảnh Đà Lạt">
+                    <p>Đà Lạt</p>
+                    <div class="salelabel">Lên tới 10%</div>
+                    <!--    <p class="sale">Giảm đến 20%</p> -->
+                </div>
+                <div class="snap-item1">
+                    <img src="images/hue.jpg" alt="Ảnh Huế">
+                    <p>Huế</p>
+                    <div class="salelabel">Lên tới 20%</div>
+                </div>
+                <div class="snap-item1">
+                    <img src="images/camau.jpg" alt="Ảnh Cà Mau">
+                    <p>Cà Mau</p>
+                    <div class="salelabel">Lên tới 25%</div>
+                </div>
+                <div class="snap-item1">
+                    <img src="images/hagiang.jpg" alt="Ảnh Hà Giang">
+                    <p>Hà Giang</p>
+                    <div class="salelabel">Lên tới 15%</div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <nav class="about">
+                <h2>Giới thiệu </h2>
+                <p>Chào mừng bạn đến với trang web đặt chuyến du lịch của chúng tôi, nơi biến những ước mơ khám phá thế
+                    giới của bạn thành hiện thực!
+                    Chúng tôi tự hào là nền tảng hàng đầu giúp bạn tìm kiếm, lên kế hoạch và đặt các chuyến đi hoàn hảo
+                    cho mình và người thân.</p>
+                <p>Hãy để chúng tôi đồng hành cùng bạn trên mọi chặng đường và khám phá những chân trời mới. Trang web
+                    đặt chuyến du lịch của chúng tôi là
+                    người bạn đồng hành tin cậy, mang đến cho bạn những trải nghiệm du lịch tuyệt vời và đáng nhớ nhất.
+                </p>
+                <p>Khám phá ngay hôm nay và lên kế hoạch cho chuyến đi mơ ước của bạn!</p>
+            </nav>
+
+            <nav class="img-about">
+                <img src="images/anhnen2.jpg" alt="">
+            </nav>
+        </section>
+        <section class="fullmenu">
+            <ul>
+                <li class="continents">Châu Á</li>
+                <li>Tokyo, Nhật Bản</li>
+                <li>Bangkok, Thái Lan</li>
+                <li>Bali, Indonesia</li>
+                <li>Seoul, Hàn Quốc</li>
+                <li>Hồng Kông</li>
+            </ul>
+            <ul>
+                <li class="continents">Châu Âu</li>
+                <li>Paris, Pháp</li>
+                <li>Rome, Ý</li>
+                <li>London, Anh</li>
+                <li><a href="Barcelona/barcelona.html">Barcelona, Tây Ban Nha</a></li>
+                <li>Amsterdam, Hà Lan</li>
+            </ul>
+            <ul>
+                <li class="continents">Châu Mỹ</li>
+                <li>New York, Mỹ</li>
+                <li>Rio de Janeiro, Brazil:</li>
+                <li>Cancun, Mexico</li>
+                <li>Toronto, Canada</li>
+                <li>Buenos Aires, Argentina</li>
+            </ul>
+            <ul>
+                <li class="continents">Châu Phi</li>
+                <li>Calie Town, Nam Phi</li>
+                <li>Marrakech, Maroc</li>
+                <li>Cairo, Ai Cập</li>
+                <li>Nairobi, Kenya</li>
+                <li>Zanzibar, Tanzania</li>
+            </ul>
+            <ul>
+                <li class="continents">Châu Đại Dương</li>
+                <li>Sydney, Úc</li>
+                <li>Auckland, New Zealand</li>
+                <li>Melbourne, Úc</li>
+                <li>Fiji</li>
+                <li>Brisbane, Úc</li>
+            </ul>
+
+        </section>
+    </div>
+    <button onclick="topFunction()" class="scroll-to-top" id="scrollToTopBtn">Lên đầu trang</button>
+    <div class="Footer">
+        <div class="nguoithietke">
+            <h3>Trang web được thiết kế bởi: </h3>
+            <ul>
+                <li>Trần Hậu Thành Đạt</li>
+                <li>Lương Xuân Hợp</li>
+                <li>Nguyễn Việt Sáng</li>
+                <li>Nguyễn Trường Giang</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Xem thêm về chúng tôi</h3>
+            <ul class="Find-us">
+                <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/6/6904cd2e74ef73120833cff12185a320.svg"
+                        alt="Facebook"></li>
+                <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/6/62a2fc240d7e00b05d0d6f6b4e785110.svg"
+                        alt="Instagram"></li>
+                <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/4/471f17c1510d49a98bec08a48b84c607.svg"
+                        alt="Tiktok"></li>
+                <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/b/b593add66303beb2a0cae9e96963e68b.svg"
+                        alt="Youtube"></li>
+                <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/a/a4da6605a9dd2f38ac799eaedeff976d.svg"
+                        alt="Telegram"></li>
+            </ul>
+        </div>
+        <div class="lienhe">
+            <h3>Thông tin liên hệ</h3>
+            <ul>
+                <li>Số điện thoại: 0975606551</li>
+                <li>Email: truonggiang11724@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

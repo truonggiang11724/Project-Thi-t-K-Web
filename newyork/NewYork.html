@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York - Tourasis</title>
+    <link rel="icon" type="image/x-icon" href="../images/logoicon.ico">
+    <link rel="stylesheet" href="NewYork.css">
+</head>
+
+<body>
+    <div class="Header">
+        <div class="Header1">
+            <div class="navbar">
+                <nav class="nav1-l">
+                    <a href="../Home.html"><img src="../images/logo.png" alt="Logo"></a>
+                    <a href=# style="width: 150px;">Địa điểm nổi tiếng</a>
+                    <a href=#>Khuyến mãi</a>
+                    <a href="../LienHe/lienhe.html">Liên hệ</a>
+                </nav>
+                <nav class="nav1-r">
+                    <a href="../DangNhap/Dangnhap.html">Đăng kí</a>
+                    <a href="../DangNhap/Dangnhap.html">Đăng nhập</a>
+                    <button class="navbar-toggle" onclick="toggleNavbar()">&#9776;</button>
+                    <select name="Language" id="1">
+                        <option value="TiengViet">Tiếng Việt</option>
+                        <option value="TiengAnh">English</option>
+                    </select>
+                </nav>
+                <nav class="navbar-links" id="navbarLinks">
+                    <a href=#>Địa điểm nổi tiếng</a>
+                    <a href=#>Khuyến mãi</a>
+                    <a href="../LienHe/lienhe.html">Liên hệ</a>
+                    <a href="../DangNhap/Dangnhap.html">Đăng kí</a>
+                    <a href="../DangNhap/Dangnhap.html">Đăng nhập</a>
+                </nav>
+            </div>
+            <div class="Header11">
+                <h1>DU LỊCH CÙNG TOURASIS</h1>
+                <div class="Header111">
+                    <nav class="search">
+                        <section id="search">
+                            <form id="search-form">
+                                <h2>Điền thông tin chuyến đi</h2>
+                                <label for="location" class="location">Địa điểm xuất phát</label>
+                                <div>
+                                    <div>
+                                        <label for="Province">Tỉnh/Thành phố: </label>
+                                        <select name="Province" id="Pr">
+                                            <option value="Hà nội">Hà Nội</option>
+                                            <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
+                                            <option value="Hà Tĩnh">Hà Tĩnh</option>
+                                            <option value="Nghệ An">Nghệ An</option>
+                                            <option value="Thanh Hóa">Thanh Hóa</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="District">Quận/Huyện: </label>
+                                        <select name="" id=""></select>
+                                    </div>
+
+                                </div>
+                                <div class="info">
+                                    <label for="people">Số người lớn:</label>
+                                    <input type="number" id="people" name="people" required>
+                                    <label for="children">Số trẻ em:</label>
+                                    <input type="number" id="children" name="children" required>
+                                </div>
+                                <div class="info">
+                                    <label for="date">Ngày đặt:</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+                                <button type="submit">Tham khảo giá</button>
+                            </form>
+                        </section>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="place-list">
+        <h1>Newyork - Mỹ</h1>
+        <div class="place">
+            <h2>Central Park</h2>
+            <div class="descr">
+                <div class="image-descr">
+                    <img src="images/Central-Park3.jpg" alt="Place 1" class="imagemain" id="imagemain">
+                    <div class="imagex2" id="imagex2">
+                        <img src="images/Central-Park1.jpg" alt="Place 1">
+                        <img src="images/CenTral-Park2.jpg" alt="Place 1">
+                    </div>
+                </div>
+                <p class="pdescr">Central Park là một trong những công viên đô thị lớn nhất và nổi tiếng nhất trên thế
+                    giới. Nằm ở trung tâm Manhattan, nơi đây thu hút hàng triệu du khách mỗi năm với cảnh quan thiên
+                    nhiên tuyệt đẹp và các hoạt động giải trí phong phú. Công viên này có diện tích 843 mẫu Anh và là
+                    nơi lý tưởng để đi bộ, đạp xe, chèo thuyền, và thậm chí là xem các buổi biểu diễn nghệ thuật ngoài
+                    trời.</p>
+            </div>
+        </div>
+        <div class="place">
+            <h2>Statue of Liberty</h2>
+            <div class="descr">
+                <div class="image-descr">
+                    <img src="images/nttd1.jpg" alt="Place 2" class="imagemain" id="imagemain">
+                    <div class="imagex2" id="imagex2">
+                        <img src="images/nttd2.jpg" alt="Place 2">
+                        <img src="images/nttd3.jpg" alt="Place 2">
+                    </div>
+                </div>
+
+                <p class="pdescr">Tượng Nữ Thần Tự Do là biểu tượng của tự do và dân chủ, nằm trên đảo Liberty ở cảng
+                    New York. Được Pháp tặng cho Mỹ vào năm 1886, tượng này là một trong những điểm du lịch nổi tiếng
+                    nhất ở New York. Du khách có thể leo lên đến vương miện của tượng để chiêm ngưỡng khung cảnh tuyệt
+                    đẹp của thành phố và bến cảng. Bảo tàng tại đế tượng cũng cung cấp nhiều thông tin về lịch sử của
+                    tượng và những câu chuyện về người nhập cư đến Mỹ.</p>
+            </div>
+        </div>
+        <div class="place">
+            <h2>Empire State Building</h2>
+            <div class="descr">
+                <div class="image-descr">
+                    <img src="images/statebuilding1.jpg" alt="Place 3" class="imagemain" id="imagemain">
+                    <div class="imagex2" id="imagex2">
+                        <img src="images/statebuilding2.jpg" alt="Place 3">
+                        <img src="images/statebuilding3.jpg" alt="Place 3">
+                    </div>
+                </div>
+
+                <p class="pdescr">Empire State Building là một trong những tòa nhà chọc trời nổi tiếng nhất thế giới.
+                    Tọa lạc tại trung tâm Manhattan, tòa nhà này có đài quan sát ở tầng 86 và 102, cho phép du khách
+                    ngắm nhìn toàn cảnh New York. Tòa nhà đã từng là công trình cao nhất thế giới và vẫn là biểu tượng
+                    của kiến trúc và kỹ thuật hiện đại. Từ đài quan sát, bạn có thể nhìn thấy Quảng trường Thời đại,
+                    Công viên Trung tâm, và các điểm tham quan nổi tiếng khác.</p>
+            </div>
+        </div>
+        <div class="place">
+            <h2>Times Square</h2>
+            <div class="descr">
+                <div class="image-descr">
+                    <img src="images/timesq1.jpg" alt="Place 4" class="imagemain" id="imagemain">
+                    <div class="imagex2" id="imagex2">
+                        <img src="images/timesq2.jpg" alt="Place 4">
+                        <img src="images/timesq3.jpg" alt="Place 4">
+                    </div>
+                </div>
+
+                <p class="pdescr">Times Square là một trong những giao lộ sầm uất nhất trên thế giới, nằm tại trung tâm
+                    của New York. Nơi đây nổi tiếng với các biển quảng cáo sáng đèn và là địa điểm tổ chức sự kiện đếm
+                    ngược chào đón năm mới. Times Square còn được gọi là "Ngã tư của thế giới" và là trung tâm giải trí
+                    với nhiều rạp hát Broadway, nhà hàng, và cửa hàng mua sắm. Du khách có thể tham gia các sự kiện đặc
+                    biệt, xem các buổi biểu diễn đường phố và tận hưởng không khí náo nhiệt của thành phố không bao giờ
+                    ngủ.</p>
+            </div>
+        </div>
+    </section>
+    <div class="comment-section">
+        <h2>Để Lại bình luận, góp ý cho chúng tôi</h2>
+        <form id="comment-form">
+            <div class="form-group">
+                <label for="name">Tên:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="comment">Bình Luận:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <button type="submit">Gửi</button>
+        </form>
+        <div id="comments">
+            <!-- Bình luận mẫu tĩnh -->
+            <div class="comment">
+                <div class="comment-content">
+                    <h4>Ramsdatle</h4>
+                    <p>Địa điểm này thật tuyệt vời! Phong cảnh đẹp mắt và đồ ăn địa phương rất ngon.</p>
+                </div>
+            </div>
+            <div class="comment">          
+                <div class="comment-content">
+                    <h4>Giang</h4>
+                    <p>Tôi đã có một khoảng thời gian tuyệt vời khi thăm quan địa điểm này. Các di tích lịch sử được bảo tồn rất tốt.</p>
+                </div>
+            </div>
+            <div class="comment">          
+                <div class="comment-content">
+                    <h4>Hợp</h4>
+                    <p>Một địa điểm phải đến cho những ai yêu thiên nhiên. Các đường mòn leo núi cho những cảnh quan tuyệt vời.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" class="scroll-to-top" id="scrollToTopBtn">Đi thôi</button>
+    <footer>
+        <div class="Footer">
+            <div class="nguoithietke">
+                <h3>Trang web được thiết kế bởi: </h3>
+                <ul>
+                    <li>Trần Hậu Thành Đạt</li>
+                    <li>Lương Xuân Hợp</li>
+                    <li>Nguyễn Việt Sáng</li>
+                    <li>Nguyễn Trường Giang</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Xem thêm về chúng tôi</h3>
+                <ul class="Find-us">
+                    <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/6/6904cd2e74ef73120833cff12185a320.svg"
+                            alt="Facebook"></li>
+                    <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/6/62a2fc240d7e00b05d0d6f6b4e785110.svg"
+                            alt="Instagram"></li>
+                    <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/4/471f17c1510d49a98bec08a48b84c607.svg"
+                            alt="Tiktok"></li>
+                    <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/b/b593add66303beb2a0cae9e96963e68b.svg"
+                            alt="Youtube"></li>
+                    <li><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/a/a4da6605a9dd2f38ac799eaedeff976d.svg"
+                            alt="Telegram"></li>
+                </ul>
+            </div>
+            <div class="lienhe">
+                <h3>Thông tin liên hệ</h3>
+                <ul>
+                    <li>Số điện thoại: 0975606551</li>
+                    <li>Email: truonggiang11724@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>

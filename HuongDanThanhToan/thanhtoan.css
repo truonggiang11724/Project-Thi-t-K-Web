@@ -1,0 +1,88 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: antiquewhite;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+.payment-methods, .contact-support {
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+.method {
+    margin-bottom: 1.5em;
+}
+
+div.Footer {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Footer div {
+    justify-self: unset;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.Footer h3 {
+    padding-top: 30px;
+    margin-top: 0;
+}
+
+ul.Find-us {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 0;
+}
+
+ul.Find-us li {
+    padding: 10px;
+    margin-bottom: 50px;
+
+}
+
+.lienhe li {
+    text-align: left;
+}
+
+.Footer ul {
+    padding-inline-start: 0;
+}
+ul li {
+    list-style-type: none;
+}
